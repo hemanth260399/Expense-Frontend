@@ -25,12 +25,12 @@ export let NavMenu = () => {
     return (
         <>
             <div className="bg-green-400 max-w-xl mx-auto p-1 relative">
-                <div className="text-center absolute left-125" onClick={logout}>
-                    <button className="text-green-600 bg-white rounded-lg p-2 transform transition-all duration-300 hover:text-white hover:bg-green-500 font-semibold mb-5" onClick={() => { navigate("/logout") }}>
+                <div className="text-center justify-end flex" onClick={logout}>
+                    <button className="text-green-600 bg-white rounded-lg p-2 transform transition-all duration-300 hover:text-white hover:bg-green-500 font-semibold" onClick={() => { navigate("/logout") }}>
                         Logout
                     </button>
                 </div>
-                <div className="max-w-xl mx-auto p-1 mt-6">
+                <div className="max-w-xl mx-auto p-1">
                     <h1 className="text-3xl font-semibold text-center text-white mb-6">Income & Expense Tracker</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
                         <div className="bg-white shadow-md rounded-lg p-6">

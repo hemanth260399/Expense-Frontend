@@ -147,7 +147,7 @@ export let AllTransaction = () => {
                                 </tr>
                             ) : (
                                 trans.map((item) => (
-                                    < tr key={item._id} className="hover:bg-gray-100 overflow-scroll" >
+                                    < tr key={item._id} className="hover:bg-gray-100 " >
                                         <td className={`py-2 px-4 ${item.type === "income" ? "text-green-600" : "text-red-500"}`}>
                                             {item.type === "income" ? "+" : "-"}
                                         </td>
